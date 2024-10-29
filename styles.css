@@ -20,22 +20,24 @@ canvas {
     z-index: 1; /* Behind the terminal */
 }
 
+.terminal-heading {
+    z-index: 2; /* Ensure it's above the canvas */
+    font-size: 2.5em; /* Increase heading size */
+    margin: 20px 0; /* Add margin above and below */
+    color: #00ff00; /* Green color for heading */
+}
+
 .terminal {
     position: relative;
     z-index: 2; /* On top of the canvas */
     border: 2px solid #00ff00; /* Green border */
     padding: 20px;
-    width: 80%;
-    max-width: 600px;
-    height: 400px;
+    width: 90%; /* Increase width for better mobile visibility */
+    max-width: 700px; /* Adjust max width */
+    height: 450px; /* Slightly increased height */
     overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Glowing effect */
-}
-
-h1 {
-    margin: 0 0 10px;
-    font-size: 2em; /* Larger font for the title */
 }
 
 .character {
